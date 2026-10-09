@@ -257,7 +257,7 @@ car.rear_left.add_readings(100,100, '20/10/2027')
 car.rear_right.add_readings(100,100, '20/10/2027')
 
 
-assert car.current_readings() == {
+assert car.view_all_history() == {
     'left' :
     [{
     'pressure': 30,
