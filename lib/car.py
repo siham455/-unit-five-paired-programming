@@ -29,10 +29,11 @@ class Car:
         pass # No code here yet
     
     def view_all_history(self):
-        # Parameters:
-        #   none
-        # Returns:
-        #   historical readings for each position of tyre
-        # Side-effects:
-        #   none
-        pass # No code here yet
+        result = {
+            'left': self.left.history,
+            'right': self.right.history,
+            'rear_left': self.rear_left.history,
+            'rear_right': self.rear_right.history
+        }
+        
+        return result
